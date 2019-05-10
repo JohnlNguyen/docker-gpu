@@ -68,7 +68,8 @@ RUN pip --no-cache-dir install --upgrade \
         textacy \
         torchtext \
         tqdm \
-        wget
+        wget \
+        gym[atari]
 
 #For Fairseq-py
 ENV NVIDIA_VISIBLE_DEVICES all
