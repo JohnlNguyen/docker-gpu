@@ -77,10 +77,11 @@ ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
 ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
 RUN echo 'export PATH="/opt/conda/bin/:$PATH"' >> ~/.bashrc
 
-# Open Ports for TensorBoard, Jupyter, and SSH
+# Open Ports for TensorBoard, Jupyter, SSH and Jupyter
 EXPOSE 6006
 EXPOSE 7654
 EXPOSE 22
+EXPOSE 8888
 
 #Setup File System
 RUN mkdir ds
